@@ -1,0 +1,29 @@
+{
+  "name": "GulpStarter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "gulp": "~3.5.5",
+    "gulp-ruby-sass": "*"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-sass": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-minify-css": "*",
+    "gulp-jshint": "*",
+    "gulp-concat": "*",
+    "gulp-uglify": "*",
+    "gulp-imagemin": "*",
+    "gulp-clean": "*",
+    "gulp-rename": "*",
+    "gulp-notify": "*",
+    "gulp-cache": "*",
+    "gulp-plumber" : "*",
+    "gulp-buster" : "*"
+  }
+}

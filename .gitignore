@@ -1,0 +1,6 @@
+.DS_Store
+.vagrant
+.idea
+node_modules
+app/vendor
+.sass-cache
