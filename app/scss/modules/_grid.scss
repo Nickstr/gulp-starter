@@ -1,0 +1,7 @@
+.container {
+  &__row {
+    display: flex;
+    flex-wrap:wrap;
+    position: relative;
+  }
+}
