@@ -1,9 +1,15 @@
 @import '../vendor/reset-scss/reset';
+@import '../vendor/singularity/stylesheets/singularitygs';
+@import "../vendor/breakpoint-sass/stylesheets/_breakpoint.scss";
 
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
-// Import Settings
-@import "settings";
-
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
