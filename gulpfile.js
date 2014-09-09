@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
+    sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
@@ -28,8 +28,7 @@ function handleError(error) {
 gulp.task('styles', function() {
   return gulp.src('app/scss/style.scss')
     .pipe(plumber({ errorHandler: handleError }))
-    .pipe(sass({ quiet: true }))
-    .pipe(sass({ style: 'expanded' }))
+    .pipe(sass({ quiet: true, style: 'expanded' }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('public/static/styles'))
     .pipe(rename({suffix: '.min'}))
