@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "gulp": "~3.5.5",
-    "gulp-ruby-sass": "*"
+  "Dependencies": {
+
   },
   "devDependencies": {
+    "gulp": "~3.5.5",
     "gulp": "*",
     "gulp-sass": "*",
     "gulp-autoprefixer": "*",
@@ -26,4 +26,3 @@
     "gulp-plumber" : "*",
     "gulp-buster" : "*"
   }
-}
