@@ -3,6 +3,7 @@
 # FRONT END INSTALLATION
 # Run NPM Install
 npm install
+npm-check-updates -u
 
 # Install Bower
 bower install
