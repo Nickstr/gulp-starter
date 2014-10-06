@@ -9,14 +9,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
-    plumber = require('gulp-plumber'),
-    bust = require('gulp-buster')
-
-// Bust Config
-bust.config({
-    algo: 'sha1',
-    length: 6
-});
+    plumber = require('gulp-plumber');
 
 // Error catching
 function handleError(error) {
@@ -34,7 +27,6 @@ gulp.task('styles', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest('public/static/styles'))
-    .pipe(bust('busters.json'))
     .pipe(gulp.dest('.'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
@@ -48,7 +40,6 @@ gulp.task('scripts', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('public/static/scripts'))
-    .pipe(bust('busters.json'))
     .pipe(gulp.dest('.'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });

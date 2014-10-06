@@ -1,29 +1,26 @@
 {
-  "name": "GulpStarter",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "Dependencies": {
-
-  },
-  "devDependencies": {
-    "gulp": "~3.5.5",
-    "gulp": "*",
-    "gulp-sass": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-minify-css": "*",
-    "gulp-jshint": "*",
-    "gulp-concat": "*",
-    "gulp-uglify": "*",
-    "gulp-imagemin": "*",
-    "gulp-clean": "*",
-    "gulp-rename": "*",
-    "gulp-notify": "*",
-    "gulp-cache": "*",
-    "gulp-plumber" : "*",
-    "gulp-buster" : "*"
-  }
+	"name": "GulpStarter",
+	"version": "0.0.1",
+	"description": "A simple gulp starter",
+	"repository": {
+		"type": "git", "url": "https://github.com/Nickstr/gulp-starter"
+	},
+	"Dependencies": {},
+	"devDependencies": {
+		"gulp": "~3.5.5",
+		"gulp": "*",
+		"gulp-ruby-sass": "*",
+		"gulp-autoprefixer": "*",
+		"gulp-minify-css": "*",
+		"gulp-jshint": "*",
+		"gulp-concat": "*",
+		"gulp-uglify": "*",
+		"gulp-imagemin": "*",
+		"gulp-clean": "*",
+		"gulp-rename": "*",
+		"gulp-notify": "*",
+		"gulp-cache": "*",
+		"gulp-plumber": "*",
+		"gulp-buster": "*"
+	}
 }
