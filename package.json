@@ -26,3 +26,4 @@
     "gulp-plumber" : "*",
     "gulp-buster" : "*"
   }
+}
